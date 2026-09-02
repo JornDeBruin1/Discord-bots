@@ -2,7 +2,7 @@ import discord
 from discord import app_commands
 import json, os
 
-TOKEN = "MTU0NDY3NjI5MTEzMzg0MTQwOQ.Gi4Ngd.O7YJT55YU0w3iFWR3bmu7xOyq_iQ7Pv_sf1P9E"
+TOKEN = os.getenv("DISCORD_TOKEN")
 DATA_FILE = "counter.json"
 
 def load_count():
